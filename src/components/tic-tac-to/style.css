@@ -1,0 +1,36 @@
+.tic-tac-to-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 400px;
+  width: 100%;
+  height: 40vh;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-top: -3px;
+  margin-left: -2px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-size: 30px;
+  float: left;
+  color: #ee228f;
+}
+.status-box {
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 0px 30px;
+  color: #c62039;
+}
+.restart-game-btn {
+  font-size: 20px;
+  margin: 10px 30px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid red;
+  cursor: pointer;
+  color: #ee2a47;
+}

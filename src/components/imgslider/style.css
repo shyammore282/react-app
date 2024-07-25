@@ -1,0 +1,55 @@
+.slider-container {
+  display: flex;
+  width: 550px;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 200px;
+  gap: 20px;
+  position: relative;
+}
+.slider-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.img-box {
+  width: 450px;
+  height: 250px;
+}
+.left {
+  left: 3px;
+  position: absolute;
+}
+.right {
+  right: 1px;
+  position: absolute;
+}
+.button-box {
+  display: flex;
+  align-items: center;
+}
+.active {
+  width: 500px;
+  height: 500px;
+}
+.inactive {
+  display: none;
+}
+.circle-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+}
+.circle-indicator-update {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}

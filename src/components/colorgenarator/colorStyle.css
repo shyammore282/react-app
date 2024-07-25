@@ -1,0 +1,22 @@
+.button-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.button-box button {
+  margin-top: 50px;
+  padding: 5px 20px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  margin-top: 30px;
+}
+.body-content span {
+  font-size: 30px;
+}

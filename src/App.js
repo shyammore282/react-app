@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import "./App.css";
+import Accordian from "./components/accordian/Accordian";
+import StarRating from "./components/star-rating/StarRating";
+import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
+import ColorGenerator from "./components/colorgenarator/ColorGenerator";
+import TicTacTo from "./components/tic-tac-to/TicTacTo";
+import ImgSlider from "./components/imgslider/ImgSlider";
 
-function App() {
+const App = () => {
+  const bottomRef = useRef(null);
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScrollBottom = () => {
+    bottomRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="bottom">
+        <button onClick={handleScrollBottom}>scroll to bottom</button>
+      </div>
+      <Accordian />
+      <StarRating />
+      <LightDarkMode />
+      <ColorGenerator />
+      <TicTacTo />
+      <ImgSlider />
+      <div className="top">
+        <button onClick={handleScrollTop}>scroll to top</button>
+      </div>
+      <div ref={bottomRef}></div>
     </div>
   );
-}
+};
 
 export default App;
